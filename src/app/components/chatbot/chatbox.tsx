@@ -50,7 +50,12 @@ export default function ChatPopup() {
       const botReply = response.choices[0]?.message;
   
       if (botReply) {
-        setMessages((prev) => [...prev, botReply]);
+         // Ensure the bot reply is cast to ChatCompletionMessage
+         const typedBotReply: ChatCompletionMessage = {
+          role: "assistant",  // or dynamically assign if necessary
+          content: botReply.content,
+        };
+        setMessages((prev) => [...prev, typedBotReply]);
       }
     } catch (error) {
       console.error("Error fetching response:", error);
