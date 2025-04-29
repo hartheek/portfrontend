@@ -1,0 +1,43 @@
+/* [project]/src/app/components/aboutME/personal.module.css [app-client] (css) */
+.personal-module__sEkeLG__personalContainer {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.personal-module__sEkeLG__textContent {
+  max-width: 800px;
+}
+
+.personal-module__sEkeLG__bioHeading {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.personal-module__sEkeLG__bioText {
+  text-align: justify;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+  line-height: 1.8;
+}
+
+@media (width <= 480px) {
+  .personal-module__sEkeLG__bioText {
+    line-height: 1.9;
+    font-size: 1.2rem !important;
+  }
+}
+
+.personal-module__sEkeLG__imageWrapper {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_app_components_aboutME_personal_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/components/UIhome/footer/footer.module.css"],"sourcesContent":[".container {\n  font-size: clamp(16px, 5vw, 30px); /* Scales text size responsively */\n  display: flex;\n  flex-direction: column; /* Stack vertically on smaller screens */\n  justify-content: center;\n  align-items: center;\n  gap: clamp(20px, 5vw, 100px); /* Adjust spacing between elements */\n  padding: 1rem;\n  text-align: center;\n}\n\n@media (min-width: 768px) {\n  .container {\n    flex-direction: row; /* Switch to row layout on medium+ screens */\n    text-align: left;\n  }\n}\n\n.social {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap; \n  gap: 0.5rem;\n}\n\n.icon {\n  opacity: 0.6;\n  cursor: pointer;\n  width: 24px;\n  height: 24px;\n  transition: opacity 0.2s ease;\n}\n\n.icon:hover {\n  opacity: 1;\n}\n\n.linkedln {\n  white-space: nowrap;\n  font-size: clamp(14px, 4vw, 18px);\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAWA;EACE;;;;;;AAMF;;;;;;;AAOA;;;;;;;;AAQA;;;;AAIA"}}]
+}

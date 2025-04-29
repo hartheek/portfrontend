@@ -1,0 +1,81 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+.medium {
+  color: #2A2A2A;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+.biographySection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10vw;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.bioText {
+  flex: 1 1 55%;
+  font-size: clamp(1rem, 1.1vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.bioHeading {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.bioImage {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.bioImage img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}

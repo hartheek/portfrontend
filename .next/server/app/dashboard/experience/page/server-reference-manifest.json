@@ -1,0 +1,16 @@
+{
+  "node": {
+    "406f2c5f90b46d19acf442653570de5b9c2b6e88ce": {
+      "workers": {
+        "app/dashboard/experience/page": {
+          "moduleId": "[project]/.next-internal/server/app/dashboard/experience/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/components/chatbot/createChatcompletion.tsx [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/dashboard/experience/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

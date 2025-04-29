@@ -1,0 +1,41 @@
+.container {
+  font-size: clamp(16px, 5vw, 30px); /* Scales text size responsively */
+  display: flex;
+  flex-direction: column; /* Stack vertically on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 5vw, 100px); /* Adjust spacing between elements */
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Switch to row layout on medium+ screens */
+    text-align: left;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 0.5rem;
+}
+
+.icon {
+  opacity: 0.6;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s ease;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.linkedln {
+  white-space: nowrap;
+  font-size: clamp(14px, 4vw, 18px);
+}

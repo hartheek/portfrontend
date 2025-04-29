@@ -1,0 +1,42 @@
+/* [project]/src/app/components/UIhome/introname/intro.module.css [app-client] (css) */
+.intro-module__BNaxKq__name {
+  color: #2a2a2a;
+  margin-top: clamp(5rem, 10vh, 10rem);
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 400;
+}
+
+.intro-module__BNaxKq__typee {
+  color: #2a2a2a;
+  white-space: nowrap;
+  width: 0;
+  animation: 4s steps(40, end) 1s forwards intro-module__BNaxKq__typing, .75s step-end infinite intro-module__BNaxKq__blink;
+}
+
+.intro-module__BNaxKq__iam h1 {
+  color: #2a4d9c;
+  white-space: normal;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+}
+
+.intro-module__BNaxKq__btn {
+  color: #2a4d9c;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #2a4d9c;
+  border-radius: 30px;
+  padding: .6rem 1.4rem;
+  font-size: clamp(.9rem, 1.2vw, 1.1rem);
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.intro-module__BNaxKq__btn:hover {
+  color: #fff;
+  background-color: #2a4d9c;
+}
+
+/*# sourceMappingURL=src_app_components_UIhome_introname_intro_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,35 @@
+.mediumCard {
+    background: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none; /* just to be safe */
+    color: #111827;
+  }
+  
+  .mediumCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mediumTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827; /* black-ish */
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  /* Optional: Make sure no blue link overrides it */
+  .mediumCard:link,
+  .mediumCard:visited,
+  .mediumCard:hover,
+  .mediumCard:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  

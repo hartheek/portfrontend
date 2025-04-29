@@ -1,0 +1,84 @@
+/* [project]/src/app/dashboard/dashboard.module.css [app-client] (css) */
+.dashboard-module__XABe8G__main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+.dashboard-module__XABe8G__footer {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  bottom: 0;
+}
+
+.dashboard-module__XABe8G__hero {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+  padding: 2rem;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .dashboard-module__XABe8G__hero {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+.dashboard-module__XABe8G__medium {
+  color: #2a2a2a;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-weight: 400;
+}
+
+.dashboard-module__XABe8G__biographySection {
+  box-sizing: border-box;
+  color: #222;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 60px 10vw;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+.dashboard-module__XABe8G__bioText {
+  flex: 55%;
+  font-size: clamp(1rem, 1.1vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.dashboard-module__XABe8G__bioHeading {
+  color: #000;
+  margin-bottom: 30px;
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 900;
+}
+
+.dashboard-module__XABe8G__bioImage {
+  flex: 35%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  display: flex;
+}
+
+.dashboard-module__XABe8G__bioImage img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/*# sourceMappingURL=src_app_dashboard_dashboard_module_css_f9ee138c._.single.css.map*/

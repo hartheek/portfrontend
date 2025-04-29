@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/components/aboutME/personal.module.css"],"sourcesContent":[".personalContainer {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    padding: 2rem 1rem;\n    gap: 2rem;\n    max-width: 1200px;\n    margin: 0 auto;\n  }\n  \n  .textContent {\n    max-width: 800px;\n  }\n  \n  .bioHeading {\n    font-size: clamp(1.8rem, 4vw, 2.8rem);\n    text-align: center;\n    margin-bottom: 1rem;\n  }\n  \n  .bioText {\n    font-size: clamp(1.2rem, 2.8vw, 1.5rem); \n    line-height: 1.8;\n    margin-bottom: 1rem;\n    text-align: justify;\n    padding: 0 1rem;\n  }\n  \n  @media (max-width: 480px) {\n    .bioText {\n      font-size: 1.2rem !important;\n      line-height: 1.9;\n    }\n  }\n  \n  \n  \n  .imageWrapper {\n    width: 100%;\n    display: flex;\n    justify-content: center;\n  }\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAUE;;;;AAIA;;;;;;AAMA;;;;;;;;AAQA;EACE;;;;;;AAQF"}}]
+}

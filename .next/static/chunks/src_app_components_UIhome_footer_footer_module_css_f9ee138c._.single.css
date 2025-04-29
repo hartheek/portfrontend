@@ -1,0 +1,44 @@
+/* [project]/src/app/components/UIhome/footer/footer.module.css [app-client] (css) */
+.footer-module__sP38zW__container {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 5vw, 100px);
+  padding: 1rem;
+  font-size: clamp(16px, 5vw, 30px);
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .footer-module__sP38zW__container {
+    text-align: left;
+    flex-direction: row;
+  }
+}
+
+.footer-module__sP38zW__social {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.footer-module__sP38zW__icon {
+  opacity: .6;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: opacity .2s;
+}
+
+.footer-module__sP38zW__icon:hover {
+  opacity: 1;
+}
+
+.footer-module__sP38zW__linkedln {
+  white-space: nowrap;
+  font-size: clamp(14px, 4vw, 18px);
+}
+
+/*# sourceMappingURL=src_app_components_UIhome_footer_footer_module_css_f9ee138c._.single.css.map*/
