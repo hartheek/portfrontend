@@ -401,9 +401,14 @@ function ChatPopup() {
             ]);
             const botReply = response.choices[0]?.message;
             if (botReply) {
+                // Ensure the bot reply is cast to ChatCompletionMessage
+                const typedBotReply = {
+                    role: "assistant",
+                    content: botReply.content
+                };
                 setMessages((prev)=>[
                         ...prev,
-                        botReply
+                        typedBotReply
                     ]);
             }
         } catch (error) {
@@ -421,18 +426,18 @@ function ChatPopup() {
                     size: 24
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                    lineNumber: 70,
+                    lineNumber: 75,
                     columnNumber: 19
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
                     size: 24
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                    lineNumber: 70,
+                    lineNumber: 75,
                     columnNumber: 37
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                lineNumber: 66,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -456,7 +461,7 @@ function ChatPopup() {
                             children: "Talk To Me 💬"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                            lineNumber: 83,
+                            lineNumber: 88,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -470,20 +475,20 @@ function ChatPopup() {
                                             children: "Bot:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 96,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Hi there! How can we help you?"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 97,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 95,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -494,20 +499,20 @@ function ChatPopup() {
                                             children: "Bot:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 100,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "You can ask anything about Hartheek!"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 101,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 99,
                                     columnNumber: 15
                                 }, this),
                                 messages.map((message, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -520,25 +525,25 @@ function ChatPopup() {
                                                     children: message.role === "user" ? "You:" : "Bot:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 115,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: message.content
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                                    lineNumber: 113,
+                                                    lineNumber: 118,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 110,
                                             columnNumber: 19
                                         }, this)
                                     }, index, false, {
                                         fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 106,
                                         columnNumber: 17
                                     }, this)),
                                 loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -547,25 +552,25 @@ function ChatPopup() {
                                         className: "animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 126,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 125,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     ref: bottomRef
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 131,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                            lineNumber: 88,
+                            lineNumber: 93,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -583,29 +588,29 @@ function ChatPopup() {
                                 className: "w-full border rounded-full px-4 py-2 text-sm focus:outline-none"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                                lineNumber: 131,
+                                lineNumber: 136,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                            lineNumber: 130,
+                            lineNumber: 135,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                    lineNumber: 76,
+                    lineNumber: 81,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-                lineNumber: 74,
+                lineNumber: 79,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/chatbot/chatbox.tsx",
-        lineNumber: 64,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }

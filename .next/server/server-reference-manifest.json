@@ -2,12 +2,17 @@
   "node": {
     "406f2c5f90b46d19acf442653570de5b9c2b6e88ce": {
       "workers": {
+        "app/dashboard/contact/page": {
+          "moduleId": "[project]/.next-internal/server/app/dashboard/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/components/chatbot/createChatcompletion.tsx [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
         "app/dashboard/page": {
           "moduleId": "[project]/.next-internal/server/app/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/components/chatbot/createChatcompletion.tsx [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
         }
       },
       "layer": {
+        "app/dashboard/contact/page": "action-browser",
         "app/dashboard/page": "action-browser"
       }
     }

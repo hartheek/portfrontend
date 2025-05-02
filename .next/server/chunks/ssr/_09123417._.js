@@ -14,16 +14,31 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 async function createChatCompletion(messages) {
-    const response = await fetch(`${process.env.API_URL}/openai/chatCompletion`, {
-        method: "POST",
+    const latestUserMessage = messages[messages.length - 1];
+    const BASE_URL = process.env.API_URL || 'http://localhost:3001';
+    const response = await fetch(`${BASE_URL}/openai`, {
+        method: 'POST',
         headers: {
-            "content-Type": "application/json"
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            messages
+            prompt: latestUserMessage.content
         })
     });
-    return response.json();
+    if (!response.ok) {
+        throw new Error('Failed to fetch response from Gemini backend');
+    }
+    const data = await response.json();
+    return {
+        choices: [
+            {
+                message: {
+                    role: 'assistant',
+                    content: data.result
+                }
+            }
+        ]
+    };
 }
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
